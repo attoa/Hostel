@@ -1,0 +1,59 @@
+.rule-card {
+	margin-bottom: 40px;
+	padding: 15px 20px;
+	border-radius: 12px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.rule-card_main {
+	display: flex;
+	flex-direction: column;
+}
+.rule-card__info {
+	font-size: 16px;
+	text-align: center;
+}
+.rule-card__nav {
+	display: none;
+	align-self: center;
+	margin-top: 1em;
+	padding-left: 30px;
+	line-height: 1.7;
+}
+.rule-card__nav a:hover {
+	color: #b17484;
+}
+.rule-card__head {
+	margin-bottom: 0.75em;
+	color: #96334D;
+	text-align: center;
+	font-size: 18px;
+}
+.rule-card__text {
+	font-size: 14px;
+	line-height: 1.7;
+}
+.rule-card__text ul {
+	padding-left: 20px;
+}
+.rule-card__text ul > li {
+	margin: 0.5em 0;
+}
+.rule-card__text ol {
+	padding-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+	.rule-card {
+		padding: 10px;
+	}
+	.rule-card__nav {
+		display: block;
+		max-width: calc(100% - 20px); /* For IE11 */
+	}
+	.rule-card__head {
+		margin-bottom: 0;
+	}
+	.rule-card__text ol {
+		padding-left: 15px;
+	}
+}
